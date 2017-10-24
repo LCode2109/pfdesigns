@@ -1,0 +1,204 @@
+<nav class="navbar navbar-inverse navbar-custom-dark" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <i class="material-icons">developer_mode</i>StartKit
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-top-collapse" id="bs-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-left">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons">home</i> Home <span class="caret"></span>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a href="/">
+                <i class="material-icons">grade</i> Variant #1
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('index_2') %>">
+                <i class="material-icons">switch_camera</i> Variant #2
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('index_3') %>">
+                <i class="material-icons">switch_video</i> Mobile App
+              </a>
+            </li>
+          </ul>
+        </li>
+
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons">pages</i> Main Pages <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="<%= page_path('pricing') %>">
+                <i class="material-icons">monetization_on</i> Pricing
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('services') %>">
+                <i class="material-icons">done_all</i> Services
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('features') %>">
+                <i class="material-icons">new_releases</i> Features
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('about') %>">
+                <i class="material-icons">face</i> About
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('contact_us') %>">
+                <i class="material-icons">contact_mail</i> Contact Us
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons">dashboard</i> Portfolio <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="<%= page_path('portfolio_1_col') %>">
+                <i class="material-icons">brightness_4</i>
+                1 Column Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('portfolio_2_col') %>">
+                <i class="material-icons">brightness_5</i>
+                2 Column Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('portfolio_3_col') %>">
+                <i class="material-icons">brightness_6</i>
+                3 Column Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('portfolio_item') %>">
+                <i class="material-icons">camera_alt</i>
+                Single Portfolio Item
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="<%= page_path('gallery_4_col') %>">
+                <i class="material-icons">compare</i>
+                4 Column Gallery
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons">receipt</i> Other Pages <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="<%= page_path('support') %>">
+                <i class="material-icons">record_voice_over</i>
+                Support (Knowledge Base)
+              </a>
+            </li>
+
+            <li>
+              <a href="<%= page_path('faq') %>">
+                <i class="material-icons">question_answer</i>
+                FAQs
+              </a>
+            </li>
+
+            <li>
+              <a href="<%= page_path('full_width') %>">
+                <i class="material-icons">aspect_ratio</i>
+                Full Width Page (All Components)
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('sidebar') %>">
+                <i class="material-icons">list</i>
+                Sidebar Page
+              </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+              <a href="<%= page_path('login') %>">
+                <i class="material-icons">exit_to_app</i>
+                Login
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('signup') %>">
+                <i class="material-icons">supervisor_account</i>
+                Signup
+              </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+              <a href="<%= page_path('blog_home_1') %>">
+                <i class="material-icons">border_color</i>
+                Blog Home 1
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('blog_home_2') %>">
+                <i class="material-icons">insert_emoticon</i>
+                Micro Blog (Tumblr)
+              </a>
+            </li>
+            <li>
+              <a href="<%= page_path('blog_post') %>">
+                <i class="material-icons">wrap_text</i>
+                Blog Post
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="navbar-btn-container">
+          <a href="<%= signup_path %>" type="button" class="btn btn-primary navbar-btn">
+            <i class="material-icons">supervisor_account</i>
+            Sign in
+          </a>
+        </li>
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- container -->
+</nav>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html itemscope itemtype="https://schema.org/" id="ie6" class="ie" lang="en-US"><![endif]-->
+<!--[if IE 7 ]>   <html itemscope itemtype="https://schema.org/" id="ie7" class="ie" lang="en-US"><![endif]-->
+<!--[if IE 8 ]>   <html itemscope itemtype="https://schema.org/" id="ie8" class="ie" lang="en-US"><![endif]-->
+<!--[if IE 9 ]>   <html itemscope itemtype="https://schema.org/" id="ie9" class="ie" lang="en-US"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html itemscope itemtype="https://schema.org/" lang="en-US">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <%= render "shared/meta.html" %>
+
+  <title>StartKit - Software And Business Template</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" charset="utf-8">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/plugins/aos/aos.css">
+  <%= stylesheet_link_tag "application" %>
+
+  <%= yield :custom_styles %>
+</head>
+<body>
+  <%= render "shared/header" %>
+
+  <div id="barba-wrapper">
+    <div class="barba-container">
+      <%= yield %>
+    </div>
+  </div>
+
+  <%= render "shared/footer" %>
+
+  <%= yield :before_script %>
+
+
+  <%= javascript_include_tag "application" %>
+
+  <!-- build:js scripts/vendor.js -->
+    <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/plugins/slick/slick.min.js"></script>
+    <script src="/plugins/countUp/dist/countUp.js"></script>
+    <script src="/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
+    <script src="/plugins/isotope/isotope.pkgd.js"></script>
+    <script src="/plugins/barba/dist/barba.min.js"></script>
+    <script src="/plugins/aos/aos.js"></script>
+  <!-- endbuild -->
+
+
+
+  <%= yield :after_script %>
+</body>
+</html>
